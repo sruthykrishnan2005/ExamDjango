@@ -1,0 +1,545 @@
+/* static/css/style.css */
+
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin-top: 20px;
+}
+
+/* Header Styling */
+h1 {
+    color: #007bff;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+/* List Group Item Styling */
+.list-group-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef;
+}
+
+.list-group-item a {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.list-group-item a:hover {
+    color: #007bff;
+}
+
+/* Custom Container Padding */
+.container {
+    padding: 30px;
+}
+
+
+/* static/css/style.css */
+
+
+/* Main Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+
+/* Header */
+h1 {
+    color: #007bff;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styles */
+label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #343a40;
+}
+
+/* Input Field Styling */
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Link Style (Back to Contact List) */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design: Mobile View */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input[type="text"], 
+    input[type="email"] {
+        font-size: 0.9rem;
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+
+
+/* static/css/style.css */
+
+/* Header Styling */
+h2.text-center {
+    color: #007bff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Card Container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -15px; /* Adjust for card padding */
+}
+
+/* Card Styling */
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+/* View Details Button */
+.card .btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    color: white;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+/* Add New Contact Button */
+a.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease;
+}
+
+a.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+
+    a.btn-success {
+        width: 100%;
+    }
+}
+
+
+/* static/css/style.css */
+
+/* Container for the Contact Detail */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Contact Name Styling */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+    text-align: center;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 4px solid #007bff;
+}
+
+/* General Info Styling */
+p {
+    font-size: 1rem;
+    color: #343a40;
+    margin: 10px 0;
+}
+
+/* Link Styling for Edit, Delete, and Call */
+a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* Edit Button */
+a[href*="edit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+a[href*="edit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Delete Button */
+a[href*="delete"] {
+    background-color: #dc3545;
+    color: white;
+}
+
+a[href*="delete"]:hover {
+    background-color: #c82333;
+}
+
+/* Call Button */
+a[href*="call"] {
+    background-color: #28a745;
+    color: white;
+}
+
+a[href*="call"]:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design: Mobile View */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    a {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+
+/* static/css/style.css */
+
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 4px solid #28a745;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+/* Phone Number Styling */
+p {
+    font-size: 1rem;
+    color: #343a40;
+    margin: 10px 0;
+}
+
+/* End Call Button Styling */
+a {
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    color: white;
+    background-color: #dc3545;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design: Mobile View */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    a {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+
+
+/* static/css/style.css */
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Title Styling */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #343a40;
+    margin-bottom: 30px;
+}
+
+/* Form Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    background-color: #28a745;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design: Mobile View */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1.1rem;
+    }
+}
